@@ -1,0 +1,501 @@
+Location_ID,Product_Name,Distance,Priority,Priority_Weight,Weighted_Workload,Assigned_Agent,Distance_km
+L369,tooth paste,1.08,High,3,3.24,Agent A,1.08 km
+L291,tooth paste,1.17,High,3,3.51,Agent B,1.17 km
+L482,tooth brush,1.29,High,3,3.87,Agent C,1.29 km
+L20,rice,1.32,High,3,3.96,Agent A,1.32 km
+L270,tooth brush,1.38,High,3,4.14,Agent B,1.38 km
+L101,mobile phone,1.56,High,3,4.68,Agent C,1.56 km
+L343,curtains,2.16,High,3,6.48,Agent A,2.16 km
+L494,tooth brush,2.42,High,3,7.26,Agent B,2.42 km
+L10,curtains,2.46,High,3,7.38,Agent C,2.46 km
+L42,mobile phone,3.25,High,3,9.75,Agent A,3.25 km
+L436,tooth paste,3.46,High,3,10.379999999999999,Agent B,3.46 km
+L198,tooth brush,3.48,High,3,10.44,Agent C,3.48 km
+L137,dresses,4.39,High,3,13.169999999999998,Agent A,4.39 km
+L376,curtains,4.43,High,3,13.29,Agent B,4.43 km
+L166,mobile phone,4.47,High,3,13.41,Agent C,4.47 km
+L161,tooth paste,4.48,High,3,13.440000000000001,Agent A,4.48 km
+L253,curtains,4.55,High,3,13.649999999999999,Agent B,4.55 km
+L257,tooth paste,4.59,High,3,13.77,Agent C,4.59 km
+L461,dresses,4.8,High,3,14.399999999999999,Agent A,4.80 km
+L45,curtains,4.91,High,3,14.73,Agent B,4.91 km
+L135,vegetables,5.2,High,3,15.600000000000001,Agent C,5.20 km
+L89,vegetables,5.45,High,3,16.35,Agent A,5.45 km
+L28,tooth brush,5.74,High,3,17.22,Agent B,5.74 km
+L177,dresses,5.75,High,3,17.25,Agent C,5.75 km
+L314,curtains,6.04,High,3,18.12,Agent A,6.04 km
+L431,vegetables,6.22,High,3,18.66,Agent B,6.22 km
+L277,dresses,6.24,High,3,18.72,Agent C,6.24 km
+L334,rice,6.3,High,3,18.9,Agent A,6.30 km
+L107,vegetables,6.47,High,3,19.41,Agent B,6.47 km
+L354,curtains,6.65,High,3,19.950000000000003,Agent C,6.65 km
+L306,rice,7.24,High,3,21.72,Agent A,7.24 km
+L500,mobile phone,7.25,High,3,21.75,Agent B,7.25 km
+L140,rice,7.29,High,3,21.87,Agent C,7.29 km
+L170,dresses,7.48,High,3,22.44,Agent A,7.48 km
+L466,vegetables,7.78,High,3,23.34,Agent B,7.78 km
+L305,curtains,8.26,High,3,24.78,Agent C,8.26 km
+L219,tooth paste,8.59,High,3,25.77,Agent A,8.59 km
+L229,dresses,8.71,High,3,26.130000000000003,Agent B,8.71 km
+L59,tooth paste,9.01,High,3,27.03,Agent C,9.01 km
+L498,rice,9.09,High,3,27.27,Agent A,9.09 km
+L344,rice,10.46,High,3,31.380000000000003,Agent B,10.46 km
+L149,vegetables,10.86,High,3,32.58,Agent C,10.86 km
+L245,mobile phone,11.01,High,3,33.03,Agent A,11.01 km
+L474,tooth paste,11.13,High,3,33.39,Agent B,11.13 km
+L206,rice,11.47,High,3,34.410000000000004,Agent C,11.47 km
+L4,dresses,11.94,High,3,35.82,Agent A,11.94 km
+L156,curtains,12.01,High,3,36.03,Agent B,12.01 km
+L43,dresses,12.17,High,3,36.51,Agent C,12.17 km
+L67,tooth brush,12.22,High,3,36.660000000000004,Agent A,12.22 km
+L163,tooth brush,12.22,High,3,36.660000000000004,Agent B,12.22 km
+L159,mobile phone,12.28,High,3,36.839999999999996,Agent C,12.28 km
+L46,rice,12.41,High,3,37.230000000000004,Agent A,12.41 km
+L167,dresses,12.66,High,3,37.980000000000004,Agent B,12.66 km
+L80,tooth brush,13.08,High,3,39.24,Agent C,13.08 km
+L455,tooth paste,13.11,High,3,39.33,Agent A,13.11 km
+L188,dresses,13.18,High,3,39.54,Agent B,13.18 km
+L437,tooth brush,13.21,High,3,39.63,Agent C,13.21 km
+L112,tooth paste,13.91,High,3,41.730000000000004,Agent A,13.91 km
+L211,mobile phone,13.99,High,3,41.97,Agent B,13.99 km
+L259,tooth paste,13.99,High,3,41.97,Agent C,13.99 km
+L70,dresses,14.12,High,3,42.36,Agent A,14.12 km
+L44,mobile phone,15.18,High,3,45.54,Agent B,15.18 km
+L220,tooth paste,15.54,High,3,46.62,Agent C,15.54 km
+L117,tooth paste,15.62,High,3,46.86,Agent A,15.62 km
+L272,rice,15.67,High,3,47.01,Agent B,15.67 km
+L393,curtains,15.75,High,3,47.25,Agent C,15.75 km
+L131,curtains,16.07,High,3,48.21,Agent A,16.07 km
+L307,dresses,16.1,High,3,48.300000000000004,Agent B,16.10 km
+L150,curtains,16.27,High,3,48.81,Agent C,16.27 km
+L362,tooth brush,16.37,High,3,49.11,Agent A,16.37 km
+L379,rice,16.38,High,3,49.14,Agent B,16.38 km
+L251,dresses,16.49,High,3,49.47,Agent C,16.49 km
+L126,rice,16.88,High,3,50.64,Agent A,16.88 km
+L345,mobile phone,17.08,High,3,51.239999999999995,Agent B,17.08 km
+L378,tooth paste,17.18,High,3,51.54,Agent C,17.18 km
+L327,tooth paste,17.28,High,3,51.84,Agent A,17.28 km
+L495,tooth brush,17.47,High,3,52.41,Agent B,17.47 km
+L26,tooth paste,17.49,High,3,52.47,Agent C,17.49 km
+L375,dresses,18.85,High,3,56.550000000000004,Agent A,18.85 km
+L263,mobile phone,19.11,High,3,57.33,Agent B,19.11 km
+L51,vegetables,19.14,High,3,57.42,Agent C,19.14 km
+L96,mobile phone,19.7,High,3,59.099999999999994,Agent A,19.70 km
+L350,rice,20.58,High,3,61.739999999999995,Agent B,20.58 km
+L207,rice,20.65,High,3,61.949999999999996,Agent C,20.65 km
+L185,dresses,20.73,High,3,62.19,Agent A,20.73 km
+L497,tooth paste,20.81,High,3,62.42999999999999,Agent B,20.81 km
+L471,rice,20.97,High,3,62.91,Agent C,20.97 km
+L473,rice,21.37,High,3,64.11,Agent A,21.37 km
+L475,mobile phone,21.59,High,3,64.77,Agent B,21.59 km
+L145,tooth paste,21.73,High,3,65.19,Agent C,21.73 km
+L432,dresses,21.83,High,3,65.49,Agent A,21.83 km
+L397,tooth paste,22.06,High,3,66.17999999999999,Agent B,22.06 km
+L178,dresses,22.12,High,3,66.36,Agent C,22.12 km
+L360,tooth brush,22.29,High,3,66.87,Agent A,22.29 km
+L108,tooth brush,22.3,High,3,66.9,Agent B,22.30 km
+L195,curtains,22.71,High,3,68.13,Agent C,22.71 km
+L213,tooth brush,23.3,High,3,69.9,Agent A,23.30 km
+L339,tooth paste,23.55,High,3,70.65,Agent B,23.55 km
+L180,rice,23.88,High,3,71.64,Agent C,23.88 km
+L403,vegetables,24.19,High,3,72.57000000000001,Agent A,24.19 km
+L136,tooth brush,24.81,High,3,74.42999999999999,Agent B,24.81 km
+L285,tooth brush,24.94,High,3,74.82000000000001,Agent C,24.94 km
+L88,mobile phone,25.97,High,3,77.91,Agent A,25.97 km
+L364,mobile phone,26.06,High,3,78.17999999999999,Agent B,26.06 km
+L154,curtains,26.36,High,3,79.08,Agent C,26.36 km
+L98,mobile phone,26.93,High,3,80.78999999999999,Agent A,26.93 km
+L33,tooth paste,27.28,High,3,81.84,Agent B,27.28 km
+L104,tooth paste,27.31,High,3,81.92999999999999,Agent C,27.31 km
+L371,tooth paste,27.38,High,3,82.14,Agent A,27.38 km
+L465,tooth paste,27.47,High,3,82.41,Agent B,27.47 km
+L223,mobile phone,27.57,High,3,82.71000000000001,Agent C,27.57 km
+L142,tooth paste,27.94,High,3,83.82000000000001,Agent A,27.94 km
+L63,tooth brush,28.29,High,3,84.87,Agent B,28.29 km
+L398,rice,29.42,High,3,88.26,Agent C,29.42 km
+L226,vegetables,29.62,High,3,88.86,Agent A,29.62 km
+L158,dresses,29.83,High,3,89.49,Agent B,29.83 km
+L280,tooth paste,30.64,High,3,91.92,Agent C,30.64 km
+L363,tooth brush,30.7,High,3,92.1,Agent A,30.70 km
+L119,dresses,30.84,High,3,92.52,Agent B,30.84 km
+L56,dresses,30.85,High,3,92.55000000000001,Agent C,30.85 km
+L267,tooth paste,30.97,High,3,92.91,Agent A,30.97 km
+L318,tooth brush,31.41,High,3,94.23,Agent B,31.41 km
+L459,vegetables,31.71,High,3,95.13,Agent C,31.71 km
+L92,tooth brush,31.74,High,3,95.22,Agent A,31.74 km
+L422,mobile phone,31.86,High,3,95.58,Agent B,31.86 km
+L49,tooth paste,32.15,High,3,96.44999999999999,Agent C,32.15 km
+L15,rice,32.84,High,3,98.52000000000001,Agent A,32.84 km
+L152,mobile phone,32.84,High,3,98.52000000000001,Agent B,32.84 km
+L75,dresses,33.12,High,3,99.35999999999999,Agent C,33.12 km
+L168,curtains,33.78,High,3,101.34,Agent A,33.78 km
+L249,rice,33.91,High,3,101.72999999999999,Agent B,33.91 km
+L182,rice,33.99,High,3,101.97,Agent C,33.99 km
+L234,vegetables,34.09,High,3,102.27000000000001,Agent A,34.09 km
+L6,vegetables,34.16,High,3,102.47999999999999,Agent B,34.16 km
+L103,rice,34.4,High,3,103.19999999999999,Agent C,34.40 km
+L424,dresses,35.12,High,3,105.35999999999999,Agent A,35.12 km
+L266,tooth paste,35.47,High,3,106.41,Agent B,35.47 km
+L469,dresses,35.61,High,3,106.83,Agent C,35.61 km
+L368,rice,35.73,High,3,107.19,Agent A,35.73 km
+L281,dresses,36.16,High,3,108.47999999999999,Agent B,36.16 km
+L218,mobile phone,36.2,High,3,108.60000000000001,Agent C,36.20 km
+L58,rice,36.73,High,3,110.19,Agent A,36.73 km
+L32,tooth paste,36.76,High,3,110.28,Agent B,36.76 km
+L5,curtains,37.09,High,3,111.27000000000001,Agent C,37.09 km
+L326,tooth brush,37.09,High,3,111.27000000000001,Agent A,37.09 km
+L295,vegetables,37.32,High,3,111.96000000000001,Agent B,37.32 km
+L373,vegetables,37.36,High,3,112.08,Agent C,37.36 km
+L488,tooth paste,37.63,High,3,112.89000000000001,Agent A,37.63 km
+L224,tooth paste,37.65,High,3,112.94999999999999,Agent B,37.65 km
+L484,dresses,37.92,High,3,113.76,Agent C,37.92 km
+L139,tooth paste,38.53,High,3,115.59,Agent A,38.53 km
+L430,vegetables,38.73,High,3,116.19,Agent B,38.73 km
+L309,tooth paste,40.01,High,3,120.03,Agent C,40.01 km
+L440,tooth brush,40.27,High,3,120.81,Agent A,40.27 km
+L329,rice,40.31,High,3,120.93,Agent B,40.31 km
+L331,tooth brush,40.73,High,3,122.19,Agent C,40.73 km
+L37,tooth brush,41.64,High,3,124.92,Agent A,41.64 km
+L449,curtains,41.7,High,3,125.10000000000001,Agent B,41.70 km
+L203,vegetables,42.59,High,3,127.77000000000001,Agent C,42.59 km
+L479,dresses,42.98,High,3,128.94,Agent A,42.98 km
+L336,vegetables,43.07,High,3,129.21,Agent B,43.07 km
+L310,tooth paste,43.17,High,3,129.51,Agent C,43.17 km
+L187,vegetables,43.22,High,3,129.66,Agent A,43.22 km
+L133,tooth paste,44.02,High,3,132.06,Agent B,44.02 km
+L129,curtains,44.06,High,3,132.18,Agent C,44.06 km
+L261,tooth brush,44.16,High,3,132.48,Agent A,44.16 km
+L300,rice,44.27,High,3,132.81,Agent B,44.27 km
+L7,vegetables,44.72,High,3,134.16,Agent C,44.72 km
+L308,rice,45.05,High,3,135.14999999999998,Agent A,45.05 km
+L311,dresses,45.05,High,3,135.14999999999998,Agent B,45.05 km
+L404,curtains,45.16,High,3,135.48,Agent C,45.16 km
+L391,mobile phone,45.24,High,3,135.72,Agent A,45.24 km
+L301,curtains,45.29,High,3,135.87,Agent B,45.29 km
+L286,mobile phone,45.36,High,3,136.07999999999998,Agent C,45.36 km
+L320,dresses,46.56,High,3,139.68,Agent A,46.56 km
+L260,tooth brush,46.73,High,3,140.19,Agent B,46.73 km
+L244,tooth paste,46.8,High,3,140.39999999999998,Agent C,46.80 km
+L274,mobile phone,47.01,High,3,141.03,Agent A,47.01 km
+L72,dresses,47.2,High,3,141.60000000000002,Agent B,47.20 km
+L134,curtains,47.4,High,3,142.2,Agent C,47.40 km
+L486,mobile phone,47.72,High,3,143.16,Agent A,47.72 km
+L434,curtains,47.94,High,3,143.82,Agent B,47.94 km
+L230,mobile phone,48.08,High,3,144.24,Agent C,48.08 km
+L357,curtains,48.16,High,3,144.48,Agent A,48.16 km
+L347,rice,48.38,High,3,145.14000000000001,Agent B,48.38 km
+L355,mobile phone,48.55,High,3,145.64999999999998,Agent C,48.55 km
+L34,curtains,48.68,High,3,146.04,Agent A,48.68 km
+L351,mobile phone,49.08,High,3,147.24,Agent B,49.08 km
+L183,mobile phone,49.22,High,3,147.66,Agent C,49.22 km
+L268,curtains,49.37,High,3,148.10999999999999,Agent A,49.37 km
+L442,mobile phone,49.41,High,3,148.23,Agent B,49.41 km
+L61,mobile phone,49.49,High,3,148.47,Agent C,49.49 km
+L97,rice,49.81,High,3,149.43,Agent A,49.81 km
+L87,rice,49.88,High,3,149.64000000000001,Agent B,49.88 km
+L255,vegetables,49.92,High,3,149.76,Agent C,49.92 km
+L395,vegetables,1.02,Medium,2,2.04,Agent A,1.02 km
+L428,rice,1.27,Medium,2,2.54,Agent A,1.27 km
+L298,rice,1.47,Medium,2,2.94,Agent A,1.47 km
+L416,curtains,2.2,Medium,2,4.4,Agent A,2.20 km
+L2,rice,2.23,Medium,2,4.46,Agent A,2.23 km
+L68,rice,2.57,Medium,2,5.14,Agent A,2.57 km
+L225,rice,3.8,Medium,2,7.6,Agent A,3.80 km
+L208,rice,3.87,Medium,2,7.74,Agent B,3.87 km
+L470,tooth paste,4.15,Medium,2,8.3,Agent A,4.15 km
+L299,curtains,4.69,Medium,2,9.38,Agent B,4.69 km
+L231,curtains,4.93,Medium,2,9.86,Agent A,4.93 km
+L288,curtains,5.52,Medium,2,11.04,Agent B,5.52 km
+L27,rice,5.54,Medium,2,11.08,Agent A,5.54 km
+L91,tooth brush,6.37,Medium,2,12.74,Agent C,6.37 km
+L387,mobile phone,7.24,Medium,2,14.48,Agent B,7.24 km
+L120,vegetables,8.49,Medium,2,16.98,Agent A,8.49 km
+L264,dresses,8.73,Medium,2,17.46,Agent C,8.73 km
+L204,mobile phone,9.15,Medium,2,18.3,Agent B,9.15 km
+L406,curtains,9.31,Medium,2,18.62,Agent A,9.31 km
+L57,tooth brush,9.39,Medium,2,18.78,Agent C,9.39 km
+L433,tooth paste,9.62,Medium,2,19.24,Agent B,9.62 km
+L114,rice,9.75,Medium,2,19.5,Agent A,9.75 km
+L189,curtains,10.32,Medium,2,20.64,Agent C,10.32 km
+L423,vegetables,10.53,Medium,2,21.06,Agent B,10.53 km
+L415,mobile phone,10.76,Medium,2,21.52,Agent A,10.76 km
+L282,mobile phone,10.98,Medium,2,21.96,Agent C,10.98 km
+L312,tooth brush,11.29,Medium,2,22.58,Agent B,11.29 km
+L11,dresses,11.71,Medium,2,23.42,Agent A,11.71 km
+L86,tooth brush,11.75,Medium,2,23.5,Agent C,11.75 km
+L160,curtains,11.79,Medium,2,23.58,Agent B,11.79 km
+L17,mobile phone,11.8,Medium,2,23.6,Agent A,11.80 km
+L491,mobile phone,11.81,Medium,2,23.62,Agent C,11.81 km
+L337,curtains,11.9,Medium,2,23.8,Agent B,11.90 km
+L414,vegetables,12.01,Medium,2,24.02,Agent A,12.01 km
+L467,rice,12.33,Medium,2,24.66,Agent C,12.33 km
+L235,tooth paste,12.52,Medium,2,25.04,Agent B,12.52 km
+L247,tooth brush,12.7,Medium,2,25.4,Agent A,12.70 km
+L426,rice,12.96,Medium,2,25.92,Agent C,12.96 km
+L238,rice,13.06,Medium,2,26.12,Agent B,13.06 km
+L454,tooth paste,13.7,Medium,2,27.4,Agent A,13.70 km
+L294,mobile phone,13.84,Medium,2,27.68,Agent C,13.84 km
+L79,rice,13.98,Medium,2,27.96,Agent B,13.98 km
+L358,tooth paste,14.01,Medium,2,28.02,Agent A,14.01 km
+L105,mobile phone,14.07,Medium,2,28.14,Agent C,14.07 km
+L332,tooth paste,14.07,Medium,2,28.14,Agent B,14.07 km
+L460,tooth brush,14.46,Medium,2,28.92,Agent A,14.46 km
+L192,vegetables,14.65,Medium,2,29.3,Agent C,14.65 km
+L462,tooth brush,15.0,Medium,2,30.0,Agent B,15.00 km
+L386,mobile phone,15.49,Medium,2,30.98,Agent A,15.49 km
+L340,tooth paste,15.95,Medium,2,31.9,Agent C,15.95 km
+L383,dresses,16.15,Medium,2,32.3,Agent B,16.15 km
+L74,vegetables,16.42,Medium,2,32.84,Agent A,16.42 km
+L69,rice,16.46,Medium,2,32.92,Agent C,16.46 km
+L410,rice,17.42,Medium,2,34.84,Agent B,17.42 km
+L157,vegetables,17.57,Medium,2,35.14,Agent A,17.57 km
+L23,tooth brush,17.67,Medium,2,35.34,Agent C,17.67 km
+L50,curtains,18.88,Medium,2,37.76,Agent B,18.88 km
+L35,curtains,19.55,Medium,2,39.1,Agent A,19.55 km
+L60,rice,19.59,Medium,2,39.18,Agent C,19.59 km
+L481,rice,19.64,Medium,2,39.28,Agent B,19.64 km
+L365,curtains,19.87,Medium,2,39.74,Agent A,19.87 km
+L248,rice,20.39,Medium,2,40.78,Agent C,20.39 km
+L385,mobile phone,20.72,Medium,2,41.44,Agent B,20.72 km
+L384,mobile phone,21.01,Medium,2,42.02,Agent A,21.01 km
+L421,tooth paste,21.31,Medium,2,42.62,Agent C,21.31 km
+L9,tooth brush,21.67,Medium,2,43.34,Agent B,21.67 km
+L94,tooth brush,21.69,Medium,2,43.38,Agent A,21.69 km
+L214,dresses,21.73,Medium,2,43.46,Agent C,21.73 km
+L297,rice,21.96,Medium,2,43.92,Agent B,21.96 km
+L190,vegetables,22.98,Medium,2,45.96,Agent A,22.98 km
+L439,mobile phone,23.37,Medium,2,46.74,Agent C,23.37 km
+L78,tooth paste,23.48,Medium,2,46.96,Agent B,23.48 km
+L205,rice,24.8,Medium,2,49.6,Agent A,24.80 km
+L435,tooth brush,26.38,Medium,2,52.76,Agent C,26.38 km
+L124,tooth paste,26.99,Medium,2,53.98,Agent B,26.99 km
+L122,tooth paste,27.43,Medium,2,54.86,Agent A,27.43 km
+L472,vegetables,27.59,Medium,2,55.18,Agent C,27.59 km
+L16,curtains,27.7,Medium,2,55.4,Agent B,27.70 km
+L489,tooth brush,27.76,Medium,2,55.52,Agent A,27.76 km
+L394,tooth brush,27.85,Medium,2,55.7,Agent C,27.85 km
+L296,curtains,28.03,Medium,2,56.06,Agent B,28.03 km
+L36,dresses,28.05,Medium,2,56.1,Agent A,28.05 km
+L278,curtains,28.11,Medium,2,56.22,Agent C,28.11 km
+L217,dresses,28.23,Medium,2,56.46,Agent B,28.23 km
+L81,rice,28.51,Medium,2,57.02,Agent A,28.51 km
+L172,tooth brush,28.98,Medium,2,57.96,Agent C,28.98 km
+L366,vegetables,29.25,Medium,2,58.5,Agent B,29.25 km
+L40,dresses,29.29,Medium,2,58.58,Agent A,29.29 km
+L242,tooth paste,29.6,Medium,2,59.2,Agent C,29.60 km
+L477,rice,29.62,Medium,2,59.24,Agent B,29.62 km
+L83,mobile phone,29.64,Medium,2,59.28,Agent A,29.64 km
+L18,vegetables,29.87,Medium,2,59.74,Agent C,29.87 km
+L239,dresses,30.13,Medium,2,60.26,Agent B,30.13 km
+L443,tooth brush,30.18,Medium,2,60.36,Agent A,30.18 km
+L392,curtains,31.16,Medium,2,62.32,Agent C,31.16 km
+L162,vegetables,31.92,Medium,2,63.84,Agent B,31.92 km
+L293,curtains,32.22,Medium,2,64.44,Agent A,32.22 km
+L118,vegetables,32.31,Medium,2,64.62,Agent C,32.31 km
+L377,tooth paste,33.55,Medium,2,67.1,Agent B,33.55 km
+L441,curtains,33.71,Medium,2,67.42,Agent A,33.71 km
+L413,mobile phone,33.97,Medium,2,67.94,Agent C,33.97 km
+L390,curtains,34.19,Medium,2,68.38,Agent B,34.19 km
+L496,mobile phone,34.28,Medium,2,68.56,Agent A,34.28 km
+L64,tooth paste,34.55,Medium,2,69.1,Agent C,34.55 km
+L468,tooth brush,35.0,Medium,2,70.0,Agent B,35.00 km
+L478,curtains,35.08,Medium,2,70.16,Agent A,35.08 km
+L41,mobile phone,35.52,Medium,2,71.04,Agent C,35.52 km
+L246,tooth paste,36.09,Medium,2,72.18,Agent B,36.09 km
+L372,mobile phone,36.25,Medium,2,72.5,Agent A,36.25 km
+L148,mobile phone,36.77,Medium,2,73.54,Agent C,36.77 km
+L412,vegetables,37.81,Medium,2,75.62,Agent B,37.81 km
+L138,tooth brush,38.27,Medium,2,76.54,Agent A,38.27 km
+L121,tooth paste,38.36,Medium,2,76.72,Agent C,38.36 km
+L480,dresses,38.51,Medium,2,77.02,Agent B,38.51 km
+L66,vegetables,39.02,Medium,2,78.04,Agent A,39.02 km
+L123,dresses,39.15,Medium,2,78.3,Agent C,39.15 km
+L315,rice,39.23,Medium,2,78.46,Agent B,39.23 km
+L212,curtains,39.42,Medium,2,78.84,Agent A,39.42 km
+L405,rice,40.01,Medium,2,80.02,Agent C,40.01 km
+L175,vegetables,40.57,Medium,2,81.14,Agent B,40.57 km
+L323,curtains,40.73,Medium,2,81.46,Agent A,40.73 km
+L271,vegetables,41.04,Medium,2,82.08,Agent C,41.04 km
+L411,mobile phone,41.1,Medium,2,82.2,Agent B,41.10 km
+L130,tooth paste,41.75,Medium,2,83.5,Agent A,41.75 km
+L265,vegetables,41.85,Medium,2,83.7,Agent C,41.85 km
+L303,curtains,41.9,Medium,2,83.8,Agent B,41.90 km
+L65,tooth brush,42.3,Medium,2,84.6,Agent A,42.30 km
+L287,mobile phone,42.46,Medium,2,84.92,Agent C,42.46 km
+L29,mobile phone,42.53,Medium,2,85.06,Agent B,42.53 km
+L380,curtains,42.55,Medium,2,85.1,Agent A,42.55 km
+L438,dresses,42.57,Medium,2,85.14,Agent C,42.57 km
+L485,dresses,42.82,Medium,2,85.64,Agent B,42.82 km
+L39,rice,43.22,Medium,2,86.44,Agent A,43.22 km
+L330,tooth paste,43.34,Medium,2,86.68,Agent C,43.34 km
+L346,tooth paste,43.35,Medium,2,86.7,Agent B,43.35 km
+L321,mobile phone,43.37,Medium,2,86.74,Agent A,43.37 km
+L144,tooth brush,43.75,Medium,2,87.5,Agent C,43.75 km
+L111,tooth brush,43.92,Medium,2,87.84,Agent B,43.92 km
+L73,rice,43.94,Medium,2,87.88,Agent A,43.94 km
+L262,rice,44.08,Medium,2,88.16,Agent C,44.08 km
+L324,dresses,44.19,Medium,2,88.38,Agent B,44.19 km
+L316,tooth paste,44.32,Medium,2,88.64,Agent A,44.32 km
+L84,mobile phone,44.99,Medium,2,89.98,Agent C,44.99 km
+L476,mobile phone,45.34,Medium,2,90.68,Agent B,45.34 km
+L77,mobile phone,45.81,Medium,2,91.62,Agent A,45.81 km
+L194,curtains,46.24,Medium,2,92.48,Agent C,46.24 km
+L370,rice,46.35,Medium,2,92.7,Agent B,46.35 km
+L128,curtains,46.53,Medium,2,93.06,Agent A,46.53 km
+L54,vegetables,46.9,Medium,2,93.8,Agent C,46.90 km
+L353,mobile phone,47.02,Medium,2,94.04,Agent B,47.02 km
+L110,vegetables,47.74,Medium,2,95.48,Agent A,47.74 km
+L25,vegetables,47.9,Medium,2,95.8,Agent C,47.90 km
+L221,tooth paste,48.47,Medium,2,96.94,Agent B,48.47 km
+L201,mobile phone,48.48,Medium,2,96.96,Agent A,48.48 km
+L322,tooth brush,48.83,Medium,2,97.66,Agent C,48.83 km
+L210,mobile phone,49.28,Medium,2,98.56,Agent B,49.28 km
+L216,tooth paste,49.78,Medium,2,99.56,Agent A,49.78 km
+L256,tooth paste,49.81,Medium,2,99.62,Agent C,49.81 km
+L125,tooth paste,1.03,Low,1,1.03,Agent B,1.03 km
+L127,dresses,1.95,Low,1,1.95,Agent B,1.95 km
+L325,rice,2.21,Low,1,2.21,Agent B,2.21 km
+L13,curtains,2.3,Low,1,2.3,Agent B,2.30 km
+L90,dresses,3.31,Low,1,3.31,Agent B,3.31 km
+L132,curtains,3.84,Low,1,3.84,Agent B,3.84 km
+L95,tooth brush,4.11,Low,1,4.11,Agent B,4.11 km
+L420,vegetables,4.57,Low,1,4.57,Agent A,4.57 km
+L407,tooth paste,5.15,Low,1,5.15,Agent B,5.15 km
+L8,dresses,5.26,Low,1,5.26,Agent A,5.26 km
+L184,vegetables,5.82,Low,1,5.82,Agent B,5.82 km
+L47,dresses,5.95,Low,1,5.95,Agent A,5.95 km
+L359,vegetables,6.31,Low,1,6.31,Agent B,6.31 km
+L276,rice,6.66,Low,1,6.66,Agent A,6.66 km
+L236,curtains,6.87,Low,1,6.87,Agent C,6.87 km
+L155,tooth paste,6.93,Low,1,6.93,Agent B,6.93 km
+L275,dresses,7.58,Low,1,7.58,Agent A,7.58 km
+L319,dresses,8.57,Low,1,8.57,Agent C,8.57 km
+L24,rice,8.62,Low,1,8.62,Agent B,8.62 km
+L356,tooth paste,9.75,Low,1,9.75,Agent A,9.75 km
+L232,tooth paste,10.11,Low,1,10.11,Agent C,10.11 km
+L176,curtains,10.33,Low,1,10.33,Agent B,10.33 km
+L14,vegetables,10.74,Low,1,10.74,Agent A,10.74 km
+L52,curtains,11.27,Low,1,11.27,Agent C,11.27 km
+L71,rice,11.34,Low,1,11.34,Agent B,11.34 km
+L146,dresses,11.38,Low,1,11.38,Agent A,11.38 km
+L258,curtains,11.44,Low,1,11.44,Agent C,11.44 km
+L402,rice,11.47,Low,1,11.47,Agent B,11.47 km
+L169,tooth paste,11.5,Low,1,11.5,Agent A,11.50 km
+L492,vegetables,11.75,Low,1,11.75,Agent C,11.75 km
+L342,curtains,12.15,Low,1,12.15,Agent B,12.15 km
+L417,rice,13.0,Low,1,13.0,Agent A,13.00 km
+L313,tooth paste,13.23,Low,1,13.23,Agent C,13.23 km
+L193,dresses,13.24,Low,1,13.24,Agent B,13.24 km
+L367,tooth paste,13.48,Low,1,13.48,Agent A,13.48 km
+L82,tooth brush,13.87,Low,1,13.87,Agent C,13.87 km
+L284,rice,13.94,Low,1,13.94,Agent B,13.94 km
+L143,rice,13.99,Low,1,13.99,Agent A,13.99 km
+L53,dresses,14.08,Low,1,14.08,Agent C,14.08 km
+L463,curtains,14.31,Low,1,14.31,Agent B,14.31 km
+L279,curtains,14.35,Low,1,14.35,Agent A,14.35 km
+L3,vegetables,14.48,Low,1,14.48,Agent C,14.48 km
+L290,tooth paste,14.56,Low,1,14.56,Agent B,14.56 km
+L48,rice,14.62,Low,1,14.62,Agent A,14.62 km
+L348,curtains,14.68,Low,1,14.68,Agent C,14.68 km
+L396,mobile phone,15.06,Low,1,15.06,Agent B,15.06 km
+L250,mobile phone,15.7,Low,1,15.7,Agent A,15.70 km
+L382,mobile phone,15.72,Low,1,15.72,Agent C,15.72 km
+L464,tooth brush,16.67,Low,1,16.67,Agent B,16.67 km
+L186,dresses,17.63,Low,1,17.63,Agent A,17.63 km
+L483,tooth brush,18.24,Low,1,18.24,Agent C,18.24 km
+L209,rice,19.57,Low,1,19.57,Agent B,19.57 km
+L76,curtains,20.39,Low,1,20.39,Agent A,20.39 km
+L85,mobile phone,20.57,Low,1,20.57,Agent C,20.57 km
+L317,tooth paste,20.91,Low,1,20.91,Agent B,20.91 km
+L487,curtains,21.53,Low,1,21.53,Agent A,21.53 km
+L241,mobile phone,21.54,Low,1,21.54,Agent C,21.54 km
+L388,mobile phone,21.6,Low,1,21.6,Agent B,21.60 km
+L191,rice,21.67,Low,1,21.67,Agent A,21.67 km
+L179,tooth paste,21.76,Low,1,21.76,Agent C,21.76 km
+L289,dresses,21.76,Low,1,21.76,Agent B,21.76 km
+L493,mobile phone,22.36,Low,1,22.36,Agent A,22.36 km
+L153,curtains,22.47,Low,1,22.47,Agent C,22.47 km
+L401,vegetables,22.67,Low,1,22.67,Agent B,22.67 km
+L109,dresses,23.23,Low,1,23.23,Agent A,23.23 km
+L254,tooth paste,23.46,Low,1,23.46,Agent C,23.46 km
+L400,tooth paste,23.78,Low,1,23.78,Agent B,23.78 km
+L499,tooth brush,23.9,Low,1,23.9,Agent A,23.90 km
+L173,tooth brush,24.16,Low,1,24.16,Agent C,24.16 km
+L453,tooth paste,24.26,Low,1,24.26,Agent B,24.26 km
+L418,tooth paste,24.28,Low,1,24.28,Agent A,24.28 km
+L141,dresses,24.29,Low,1,24.29,Agent C,24.29 km
+L425,curtains,25.22,Low,1,25.22,Agent B,25.22 km
+L113,rice,25.53,Low,1,25.53,Agent A,25.53 km
+L227,tooth paste,25.64,Low,1,25.64,Agent C,25.64 km
+L448,dresses,25.73,Low,1,25.73,Agent B,25.73 km
+L12,curtains,25.76,Low,1,25.76,Agent A,25.76 km
+L408,tooth paste,26.26,Low,1,26.26,Agent C,26.26 km
+L458,dresses,26.54,Low,1,26.54,Agent B,26.54 km
+L243,rice,26.62,Low,1,26.62,Agent A,26.62 km
+L352,rice,27.27,Low,1,27.27,Agent C,27.27 km
+L147,dresses,27.43,Low,1,27.43,Agent B,27.43 km
+L302,tooth brush,27.73,Low,1,27.73,Agent A,27.73 km
+L450,tooth brush,27.85,Low,1,27.85,Agent C,27.85 km
+L197,rice,27.97,Low,1,27.97,Agent B,27.97 km
+L222,curtains,29.38,Low,1,29.38,Agent A,29.38 km
+L304,dresses,29.54,Low,1,29.54,Agent C,29.54 km
+L233,mobile phone,30.16,Low,1,30.16,Agent B,30.16 km
+L490,dresses,30.56,Low,1,30.56,Agent A,30.56 km
+L30,vegetables,30.58,Low,1,30.58,Agent C,30.58 km
+L446,dresses,31.02,Low,1,31.02,Agent B,31.02 km
+L38,rice,31.31,Low,1,31.31,Agent A,31.31 km
+L240,curtains,31.35,Low,1,31.35,Agent C,31.35 km
+L409,rice,32.01,Low,1,32.01,Agent B,32.01 km
+L283,vegetables,32.08,Low,1,32.08,Agent A,32.08 km
+L456,curtains,32.25,Low,1,32.25,Agent C,32.25 km
+L1,dresses,32.33,Low,1,32.33,Agent B,32.33 km
+L62,tooth brush,32.36,Low,1,32.36,Agent A,32.36 km
+L106,vegetables,32.41,Low,1,32.41,Agent C,32.41 km
+L349,tooth paste,32.43,Low,1,32.43,Agent B,32.43 km
+L55,tooth paste,32.75,Low,1,32.75,Agent A,32.75 km
+L269,mobile phone,33.04,Low,1,33.04,Agent C,33.04 km
+L399,dresses,33.08,Low,1,33.08,Agent B,33.08 km
+L427,tooth paste,33.15,Low,1,33.15,Agent A,33.15 km
+L273,tooth brush,33.51,Low,1,33.51,Agent C,33.51 km
+L374,rice,33.86,Low,1,33.86,Agent B,33.86 km
+L22,mobile phone,35.21,Low,1,35.21,Agent A,35.21 km
+L447,tooth brush,36.24,Low,1,36.24,Agent C,36.24 km
+L381,curtains,36.27,Low,1,36.27,Agent B,36.27 km
+L102,dresses,36.32,Low,1,36.32,Agent A,36.32 km
+L361,mobile phone,36.7,Low,1,36.7,Agent C,36.70 km
+L181,vegetables,36.72,Low,1,36.72,Agent B,36.72 km
+L452,tooth brush,37.44,Low,1,37.44,Agent A,37.44 km
+L429,dresses,37.8,Low,1,37.8,Agent C,37.80 km
+L252,tooth brush,37.84,Low,1,37.84,Agent B,37.84 km
+L457,mobile phone,38.52,Low,1,38.52,Agent A,38.52 km
+L292,rice,38.78,Low,1,38.78,Agent C,38.78 km
+L174,rice,39.45,Low,1,39.45,Agent B,39.45 km
+L333,mobile phone,39.58,Low,1,39.58,Agent A,39.58 km
+L93,rice,39.81,Low,1,39.81,Agent C,39.81 km
+L341,curtains,39.97,Low,1,39.97,Agent B,39.97 km
+L21,mobile phone,40.49,Low,1,40.49,Agent A,40.49 km
+L31,rice,40.55,Low,1,40.55,Agent C,40.55 km
+L19,tooth brush,40.66,Low,1,40.66,Agent B,40.66 km
+L338,dresses,41.01,Low,1,41.01,Agent A,41.01 km
+L200,vegetables,41.97,Low,1,41.97,Agent C,41.97 km
+L419,vegetables,42.64,Low,1,42.64,Agent B,42.64 km
+L228,curtains,42.78,Low,1,42.78,Agent A,42.78 km
+L165,dresses,43.12,Low,1,43.12,Agent C,43.12 km
+L100,dresses,43.18,Low,1,43.18,Agent B,43.18 km
+L196,mobile phone,43.21,Low,1,43.21,Agent A,43.21 km
+L116,vegetables,43.66,Low,1,43.66,Agent C,43.66 km
+L335,vegetables,43.74,Low,1,43.74,Agent B,43.74 km
+L237,tooth brush,44.62,Low,1,44.62,Agent A,44.62 km
+L445,mobile phone,44.68,Low,1,44.68,Agent C,44.68 km
+L451,tooth brush,44.96,Low,1,44.96,Agent B,44.96 km
+L164,dresses,45.37,Low,1,45.37,Agent A,45.37 km
+L115,rice,45.72,Low,1,45.72,Agent C,45.72 km
+L202,tooth paste,46.39,Low,1,46.39,Agent B,46.39 km
+L328,rice,46.61,Low,1,46.61,Agent A,46.61 km
+L171,dresses,46.84,Low,1,46.84,Agent C,46.84 km
+L389,vegetables,47.08,Low,1,47.08,Agent B,47.08 km
+L444,dresses,47.55,Low,1,47.55,Agent A,47.55 km
+L215,rice,47.91,Low,1,47.91,Agent C,47.91 km
+L99,dresses,48.58,Low,1,48.58,Agent B,48.58 km
+L151,rice,49.76,Low,1,49.76,Agent A,49.76 km
+L199,tooth brush,49.96,Low,1,49.96,Agent C,49.96 km

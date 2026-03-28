@@ -1,0 +1,501 @@
+Location_ID,Product_Name,Distance,Priority
+L1,dresses,32.33,Low
+L2,rice,2.23,Medium
+L3,vegetables,14.48,Low
+L4,dresses,11.94,High
+L5,curtains,37.09,High
+L6,vegetables,34.16,High
+L7,vegetables,44.72,High
+L8,dresses,5.26,Low
+L9,tooth brush,21.67,Medium
+L10,curtains,2.46,High
+L11,dresses,11.71,Medium
+L12,curtains,25.76,Low
+L13,curtains,2.3,Low
+L14,vegetables,10.74,Low
+L15,rice,32.84,High
+L16,curtains,27.7,Medium
+L17,mobile phone,11.8,Medium
+L18,vegetables,29.87,Medium
+L19,tooth brush,40.66,Low
+L20,rice,1.32,High
+L21,mobile phone,40.49,Low
+L22,mobile phone,35.21,Low
+L23,tooth brush,17.67,Medium
+L24,rice,8.62,Low
+L25,vegetables,47.9,Medium
+L26,tooth paste,17.49,High
+L27,rice,5.54,Medium
+L28,tooth brush,5.74,High
+L29,mobile phone,42.53,Medium
+L30,vegetables,30.58,Low
+L31,rice,40.55,Low
+L32,tooth paste,36.76,High
+L33,tooth paste,27.28,High
+L34,curtains,48.68,High
+L35,curtains,19.55,Medium
+L36,dresses,28.05,Medium
+L37,tooth brush,41.64,High
+L38,rice,31.31,Low
+L39,rice,43.22,Medium
+L40,dresses,29.29,Medium
+L41,mobile phone,35.52,Medium
+L42,mobile phone,3.25,High
+L43,dresses,12.17,High
+L44,mobile phone,15.18,High
+L45,curtains,4.91,High
+L46,rice,12.41,High
+L47,dresses,5.95,Low
+L48,rice,14.62,Low
+L49,tooth paste,32.15,High
+L50,curtains,18.88,Medium
+L51,vegetables,19.14,High
+L52,curtains,11.27,Low
+L53,dresses,14.08,Low
+L54,vegetables,46.9,Medium
+L55,tooth paste,32.75,Low
+L56,dresses,30.85,High
+L57,tooth brush,9.39,Medium
+L58,rice,36.73,High
+L59,tooth paste,9.01,High
+L60,rice,19.59,Medium
+L61,mobile phone,49.49,High
+L62,tooth brush,32.36,Low
+L63,tooth brush,28.29,High
+L64,tooth paste,34.55,Medium
+L65,tooth brush,42.3,Medium
+L66,vegetables,39.02,Medium
+L67,tooth brush,12.22,High
+L68,rice,2.57,Medium
+L69,rice,16.46,Medium
+L70,dresses,14.12,High
+L71,rice,11.34,Low
+L72,dresses,47.2,High
+L73,rice,43.94,Medium
+L74,vegetables,16.42,Medium
+L75,dresses,33.12,High
+L76,curtains,20.39,Low
+L77,mobile phone,45.81,Medium
+L78,tooth paste,23.48,Medium
+L79,rice,13.98,Medium
+L80,tooth brush,13.08,High
+L81,rice,28.51,Medium
+L82,tooth brush,13.87,Low
+L83,mobile phone,29.64,Medium
+L84,mobile phone,44.99,Medium
+L85,mobile phone,20.57,Low
+L86,tooth brush,11.75,Medium
+L87,rice,49.88,High
+L88,mobile phone,25.97,High
+L89,vegetables,5.45,High
+L90,dresses,3.31,Low
+L91,tooth brush,6.37,Medium
+L92,tooth brush,31.74,High
+L93,rice,39.81,Low
+L94,tooth brush,21.69,Medium
+L95,tooth brush,4.11,Low
+L96,mobile phone,19.7,High
+L97,rice,49.81,High
+L98,mobile phone,26.93,High
+L99,dresses,48.58,Low
+L100,dresses,43.18,Low
+L101,mobile phone,1.56,High
+L102,dresses,36.32,Low
+L103,rice,34.4,High
+L104,tooth paste,27.31,High
+L105,mobile phone,14.07,Medium
+L106,vegetables,32.41,Low
+L107,vegetables,6.47,High
+L108,tooth brush,22.3,High
+L109,dresses,23.23,Low
+L110,vegetables,47.74,Medium
+L111,tooth brush,43.92,Medium
+L112,tooth paste,13.91,High
+L113,rice,25.53,Low
+L114,rice,9.75,Medium
+L115,rice,45.72,Low
+L116,vegetables,43.66,Low
+L117,tooth paste,15.62,High
+L118,vegetables,32.31,Medium
+L119,dresses,30.84,High
+L120,vegetables,8.49,Medium
+L121,tooth paste,38.36,Medium
+L122,tooth paste,27.43,Medium
+L123,dresses,39.15,Medium
+L124,tooth paste,26.99,Medium
+L125,tooth paste,1.03,Low
+L126,rice,16.88,High
+L127,dresses,1.95,Low
+L128,curtains,46.53,Medium
+L129,curtains,44.06,High
+L130,tooth paste,41.75,Medium
+L131,curtains,16.07,High
+L132,curtains,3.84,Low
+L133,tooth paste,44.02,High
+L134,curtains,47.4,High
+L135,vegetables,5.2,High
+L136,tooth brush,24.81,High
+L137,dresses,4.39,High
+L138,tooth brush,38.27,Medium
+L139,tooth paste,38.53,High
+L140,rice,7.29,High
+L141,dresses,24.29,Low
+L142,tooth paste,27.94,High
+L143,rice,13.99,Low
+L144,tooth brush,43.75,Medium
+L145,tooth paste,21.73,High
+L146,dresses,11.38,Low
+L147,dresses,27.43,Low
+L148,mobile phone,36.77,Medium
+L149,vegetables,10.86,High
+L150,curtains,16.27,High
+L151,rice,49.76,Low
+L152,mobile phone,32.84,High
+L153,curtains,22.47,Low
+L154,curtains,26.36,High
+L155,tooth paste,6.93,Low
+L156,curtains,12.01,High
+L157,vegetables,17.57,Medium
+L158,dresses,29.83,High
+L159,mobile phone,12.28,High
+L160,curtains,11.79,Medium
+L161,tooth paste,4.48,High
+L162,vegetables,31.92,Medium
+L163,tooth brush,12.22,High
+L164,dresses,45.37,Low
+L165,dresses,43.12,Low
+L166,mobile phone,4.47,High
+L167,dresses,12.66,High
+L168,curtains,33.78,High
+L169,tooth paste,11.5,Low
+L170,dresses,7.48,High
+L171,dresses,46.84,Low
+L172,tooth brush,28.98,Medium
+L173,tooth brush,24.16,Low
+L174,rice,39.45,Low
+L175,vegetables,40.57,Medium
+L176,curtains,10.33,Low
+L177,dresses,5.75,High
+L178,dresses,22.12,High
+L179,tooth paste,21.76,Low
+L180,rice,23.88,High
+L181,vegetables,36.72,Low
+L182,rice,33.99,High
+L183,mobile phone,49.22,High
+L184,vegetables,5.82,Low
+L185,dresses,20.73,High
+L186,dresses,17.63,Low
+L187,vegetables,43.22,High
+L188,dresses,13.18,High
+L189,curtains,10.32,Medium
+L190,vegetables,22.98,Medium
+L191,rice,21.67,Low
+L192,vegetables,14.65,Medium
+L193,dresses,13.24,Low
+L194,curtains,46.24,Medium
+L195,curtains,22.71,High
+L196,mobile phone,43.21,Low
+L197,rice,27.97,Low
+L198,tooth brush,3.48,High
+L199,tooth brush,49.96,Low
+L200,vegetables,41.97,Low
+L201,mobile phone,48.48,Medium
+L202,tooth paste,46.39,Low
+L203,vegetables,42.59,High
+L204,mobile phone,9.15,Medium
+L205,rice,24.8,Medium
+L206,rice,11.47,High
+L207,rice,20.65,High
+L208,rice,3.87,Medium
+L209,rice,19.57,Low
+L210,mobile phone,49.28,Medium
+L211,mobile phone,13.99,High
+L212,curtains,39.42,Medium
+L213,tooth brush,23.3,High
+L214,dresses,21.73,Medium
+L215,rice,47.91,Low
+L216,tooth paste,49.78,Medium
+L217,dresses,28.23,Medium
+L218,mobile phone,36.2,High
+L219,tooth paste,8.59,High
+L220,tooth paste,15.54,High
+L221,tooth paste,48.47,Medium
+L222,curtains,29.38,Low
+L223,mobile phone,27.57,High
+L224,tooth paste,37.65,High
+L225,rice,3.8,Medium
+L226,vegetables,29.62,High
+L227,tooth paste,25.64,Low
+L228,curtains,42.78,Low
+L229,dresses,8.71,High
+L230,mobile phone,48.08,High
+L231,curtains,4.93,Medium
+L232,tooth paste,10.11,Low
+L233,mobile phone,30.16,Low
+L234,vegetables,34.09,High
+L235,tooth paste,12.52,Medium
+L236,curtains,6.87,Low
+L237,tooth brush,44.62,Low
+L238,rice,13.06,Medium
+L239,dresses,30.13,Medium
+L240,curtains,31.35,Low
+L241,mobile phone,21.54,Low
+L242,tooth paste,29.6,Medium
+L243,rice,26.62,Low
+L244,tooth paste,46.8,High
+L245,mobile phone,11.01,High
+L246,tooth paste,36.09,Medium
+L247,tooth brush,12.7,Medium
+L248,rice,20.39,Medium
+L249,rice,33.91,High
+L250,mobile phone,15.7,Low
+L251,dresses,16.49,High
+L252,tooth brush,37.84,Low
+L253,curtains,4.55,High
+L254,tooth paste,23.46,Low
+L255,vegetables,49.92,High
+L256,tooth paste,49.81,Medium
+L257,tooth paste,4.59,High
+L258,curtains,11.44,Low
+L259,tooth paste,13.99,High
+L260,tooth brush,46.73,High
+L261,tooth brush,44.16,High
+L262,rice,44.08,Medium
+L263,mobile phone,19.11,High
+L264,dresses,8.73,Medium
+L265,vegetables,41.85,Medium
+L266,tooth paste,35.47,High
+L267,tooth paste,30.97,High
+L268,curtains,49.37,High
+L269,mobile phone,33.04,Low
+L270,tooth brush,1.38,High
+L271,vegetables,41.04,Medium
+L272,rice,15.67,High
+L273,tooth brush,33.51,Low
+L274,mobile phone,47.01,High
+L275,dresses,7.58,Low
+L276,rice,6.66,Low
+L277,dresses,6.24,High
+L278,curtains,28.11,Medium
+L279,curtains,14.35,Low
+L280,tooth paste,30.64,High
+L281,dresses,36.16,High
+L282,mobile phone,10.98,Medium
+L283,vegetables,32.08,Low
+L284,rice,13.94,Low
+L285,tooth brush,24.94,High
+L286,mobile phone,45.36,High
+L287,mobile phone,42.46,Medium
+L288,curtains,5.52,Medium
+L289,dresses,21.76,Low
+L290,tooth paste,14.56,Low
+L291,tooth paste,1.17,High
+L292,rice,38.78,Low
+L293,curtains,32.22,Medium
+L294,mobile phone,13.84,Medium
+L295,vegetables,37.32,High
+L296,curtains,28.03,Medium
+L297,rice,21.96,Medium
+L298,rice,1.47,Medium
+L299,curtains,4.69,Medium
+L300,rice,44.27,High
+L301,curtains,45.29,High
+L302,tooth brush,27.73,Low
+L303,curtains,41.9,Medium
+L304,dresses,29.54,Low
+L305,curtains,8.26,High
+L306,rice,7.24,High
+L307,dresses,16.1,High
+L308,rice,45.05,High
+L309,tooth paste,40.01,High
+L310,tooth paste,43.17,High
+L311,dresses,45.05,High
+L312,tooth brush,11.29,Medium
+L313,tooth paste,13.23,Low
+L314,curtains,6.04,High
+L315,rice,39.23,Medium
+L316,tooth paste,44.32,Medium
+L317,tooth paste,20.91,Low
+L318,tooth brush,31.41,High
+L319,dresses,8.57,Low
+L320,dresses,46.56,High
+L321,mobile phone,43.37,Medium
+L322,tooth brush,48.83,Medium
+L323,curtains,40.73,Medium
+L324,dresses,44.19,Medium
+L325,rice,2.21,Low
+L326,tooth brush,37.09,High
+L327,tooth paste,17.28,High
+L328,rice,46.61,Low
+L329,rice,40.31,High
+L330,tooth paste,43.34,Medium
+L331,tooth brush,40.73,High
+L332,tooth paste,14.07,Medium
+L333,mobile phone,39.58,Low
+L334,rice,6.3,High
+L335,vegetables,43.74,Low
+L336,vegetables,43.07,High
+L337,curtains,11.9,Medium
+L338,dresses,41.01,Low
+L339,tooth paste,23.55,High
+L340,tooth paste,15.95,Medium
+L341,curtains,39.97,Low
+L342,curtains,12.15,Low
+L343,curtains,2.16,High
+L344,rice,10.46,High
+L345,mobile phone,17.08,High
+L346,tooth paste,43.35,Medium
+L347,rice,48.38,High
+L348,curtains,14.68,Low
+L349,tooth paste,32.43,Low
+L350,rice,20.58,High
+L351,mobile phone,49.08,High
+L352,rice,27.27,Low
+L353,mobile phone,47.02,Medium
+L354,curtains,6.65,High
+L355,mobile phone,48.55,High
+L356,tooth paste,9.75,Low
+L357,curtains,48.16,High
+L358,tooth paste,14.01,Medium
+L359,vegetables,6.31,Low
+L360,tooth brush,22.29,High
+L361,mobile phone,36.7,Low
+L362,tooth brush,16.37,High
+L363,tooth brush,30.7,High
+L364,mobile phone,26.06,High
+L365,curtains,19.87,Medium
+L366,vegetables,29.25,Medium
+L367,tooth paste,13.48,Low
+L368,rice,35.73,High
+L369,tooth paste,1.08,High
+L370,rice,46.35,Medium
+L371,tooth paste,27.38,High
+L372,mobile phone,36.25,Medium
+L373,vegetables,37.36,High
+L374,rice,33.86,Low
+L375,dresses,18.85,High
+L376,curtains,4.43,High
+L377,tooth paste,33.55,Medium
+L378,tooth paste,17.18,High
+L379,rice,16.38,High
+L380,curtains,42.55,Medium
+L381,curtains,36.27,Low
+L382,mobile phone,15.72,Low
+L383,dresses,16.15,Medium
+L384,mobile phone,21.01,Medium
+L385,mobile phone,20.72,Medium
+L386,mobile phone,15.49,Medium
+L387,mobile phone,7.24,Medium
+L388,mobile phone,21.6,Low
+L389,vegetables,47.08,Low
+L390,curtains,34.19,Medium
+L391,mobile phone,45.24,High
+L392,curtains,31.16,Medium
+L393,curtains,15.75,High
+L394,tooth brush,27.85,Medium
+L395,vegetables,1.02,Medium
+L396,mobile phone,15.06,Low
+L397,tooth paste,22.06,High
+L398,rice,29.42,High
+L399,dresses,33.08,Low
+L400,tooth paste,23.78,Low
+L401,vegetables,22.67,Low
+L402,rice,11.47,Low
+L403,vegetables,24.19,High
+L404,curtains,45.16,High
+L405,rice,40.01,Medium
+L406,curtains,9.31,Medium
+L407,tooth paste,5.15,Low
+L408,tooth paste,26.26,Low
+L409,rice,32.01,Low
+L410,rice,17.42,Medium
+L411,mobile phone,41.1,Medium
+L412,vegetables,37.81,Medium
+L413,mobile phone,33.97,Medium
+L414,vegetables,12.01,Medium
+L415,mobile phone,10.76,Medium
+L416,curtains,2.2,Medium
+L417,rice,13.0,Low
+L418,tooth paste,24.28,Low
+L419,vegetables,42.64,Low
+L420,vegetables,4.57,Low
+L421,tooth paste,21.31,Medium
+L422,mobile phone,31.86,High
+L423,vegetables,10.53,Medium
+L424,dresses,35.12,High
+L425,curtains,25.22,Low
+L426,rice,12.96,Medium
+L427,tooth paste,33.15,Low
+L428,rice,1.27,Medium
+L429,dresses,37.8,Low
+L430,vegetables,38.73,High
+L431,vegetables,6.22,High
+L432,dresses,21.83,High
+L433,tooth paste,9.62,Medium
+L434,curtains,47.94,High
+L435,tooth brush,26.38,Medium
+L436,tooth paste,3.46,High
+L437,tooth brush,13.21,High
+L438,dresses,42.57,Medium
+L439,mobile phone,23.37,Medium
+L440,tooth brush,40.27,High
+L441,curtains,33.71,Medium
+L442,mobile phone,49.41,High
+L443,tooth brush,30.18,Medium
+L444,dresses,47.55,Low
+L445,mobile phone,44.68,Low
+L446,dresses,31.02,Low
+L447,tooth brush,36.24,Low
+L448,dresses,25.73,Low
+L449,curtains,41.7,High
+L450,tooth brush,27.85,Low
+L451,tooth brush,44.96,Low
+L452,tooth brush,37.44,Low
+L453,tooth paste,24.26,Low
+L454,tooth paste,13.7,Medium
+L455,tooth paste,13.11,High
+L456,curtains,32.25,Low
+L457,mobile phone,38.52,Low
+L458,dresses,26.54,Low
+L459,vegetables,31.71,High
+L460,tooth brush,14.46,Medium
+L461,dresses,4.8,High
+L462,tooth brush,15.0,Medium
+L463,curtains,14.31,Low
+L464,tooth brush,16.67,Low
+L465,tooth paste,27.47,High
+L466,vegetables,7.78,High
+L467,rice,12.33,Medium
+L468,tooth brush,35.0,Medium
+L469,dresses,35.61,High
+L470,tooth paste,4.15,Medium
+L471,rice,20.97,High
+L472,vegetables,27.59,Medium
+L473,rice,21.37,High
+L474,tooth paste,11.13,High
+L475,mobile phone,21.59,High
+L476,mobile phone,45.34,Medium
+L477,rice,29.62,Medium
+L478,curtains,35.08,Medium
+L479,dresses,42.98,High
+L480,dresses,38.51,Medium
+L481,rice,19.64,Medium
+L482,tooth brush,1.29,High
+L483,tooth brush,18.24,Low
+L484,dresses,37.92,High
+L485,dresses,42.82,Medium
+L486,mobile phone,47.72,High
+L487,curtains,21.53,Low
+L488,tooth paste,37.63,High
+L489,tooth brush,27.76,Medium
+L490,dresses,30.56,Low
+L491,mobile phone,11.81,Medium
+L492,vegetables,11.75,Low
+L493,mobile phone,22.36,Low
+L494,tooth brush,2.42,High
+L495,tooth brush,17.47,High
+L496,mobile phone,34.28,Medium
+L497,tooth paste,20.81,High
+L498,rice,9.09,High
+L499,tooth brush,23.9,Low
+L500,mobile phone,7.25,High
