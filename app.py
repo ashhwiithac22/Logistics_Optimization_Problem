@@ -2,217 +2,294 @@ import streamlit as st
 import pandas as pd
 import io
 import plotly.express as px
+import time
 from data_generator import generate_sample_data
-from utils import validate_data, assign_deliveries, get_insights
+from utils import validate_data, assign_deliveries, generate_summary
 
-st.set_page_config(page_title="Pro Logistics Optimizer", page_icon="🚚", layout="wide")
+# 1. PAGE CONFIG & CUSTOM THEMING
+st.set_page_config(page_title="Advanced Logistics Platform", page_icon="🚚", layout="wide")
 
-# Initialize session state for data sharing between pages
-for key in ['df', 'processed_df', 'agent_workloads', 'exec_stats']:
+# Inject Custom CSS for modern card-like styling of metrics and background
+st.markdown("""
+<style>
+    /* Metric Cards Styling */
+    div[data-testid="metric-container"] {
+        background: linear-gradient(145deg, #ffffff, #f0f2f6);
+        border: 1px solid #d1d9e6;
+        border-radius: 12px;
+        padding: 15px 20px;
+        box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+        color: #2b2d42;
+    }
+    div[data-testid="metric-container"] label {
+        color: #6c757d;
+        font-weight: 600;
+        font-size: 0.95rem;
+    }
+    div[data-testid="metric-container"] div[data-testid="stMetricValue"] {
+        color: #0077b6;
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    /* Headers & Text Formatting */
+    h1 { color: #023e8a; }
+    h2 { color: #0077b6; border-bottom: 2px solid #00b4d8; padding-bottom: 5px; }
+    h3 { color: #0096c7; }
+</style>
+""", unsafe_allow_html=True)
+
+# Application Global State Initialization
+for key in ['df', 'processed_df', 'agent_workloads', 'cumulative_history', 'summary_stats', 'validation_report']:
     if key not in st.session_state:
         st.session_state[key] = None
-if 'use_weighted' not in st.session_state:
-    st.session_state['use_weighted'] = False
 
-# Sidebar Navigation
-st.sidebar.title("🚚 Navigator")
+# 2. SIDEBAR NAVIGATION
+st.sidebar.markdown("## 🌐 Logistics Command")
+st.sidebar.divider()
 menu = st.sidebar.radio(
-    "Choose Action:",
+    "Modules:",
     [
-        "📂 Upload Data",
-        "🧪 Generate Sample Data",
+        "📂 Upload Dataset",
+        "👀 Data Preview",
+        "🛡️ Data Validation",
         "⚙️ Run Optimization",
+        "📑 View Results",
         "📊 Analytics Dashboard",
-        "🔄 Algorithm Comparison",
-        "🔍 Data Insights",
-        "📁 Download Results",
-        "ℹ️ About / Documentation"
+        "⬇️ Download Output"
     ]
 )
 
-st.sidebar.markdown("---")
-st.sidebar.info("Pro Logistics Optimization Dashboard")
+st.sidebar.divider()
+st.sidebar.info("💡 Tip: Use 'Data Preview' to inspect auto-generated or uploaded CSV structural integrity.")
 
-# 1. 📂 Upload Data
-if menu == "📂 Upload Data":
-    st.title("📂 Upload Logistics Data")
-    st.markdown("Upload a CSV file with deliveries to optimize. Ensure it contains the required headers.")
+# Global Color Palette Dictionary
+PRIORITY_COLORS = {'High': '#e63946', 'Medium': '#f4a261', 'Low': '#2a9d8f'}
+
+# --- UPLOAD DATASET ---
+if menu == "📂 Upload Dataset":
+    st.title("📂 System Initialization & Import")
+    st.markdown("Load a CSV batch or generate an identical test schema to commence operational routing.")
     
-    uploaded_file = st.file_uploader("Upload CSV", type=["csv"])
-    
-    if uploaded_file is not None:
-        try:
-            df = pd.read_csv(uploaded_file)
-            st.session_state['df'] = df
-            
-            # Data Validation
-            is_valid, msg = validate_data(df)
-            if is_valid:
-                st.success(f"✅ {msg}")
-                st.subheader("Dataset Preview")
-                st.dataframe(df.head(20), use_container_width=True)
-            else:
-                st.error(f"❌ Validation Failed: {msg}")
-                st.session_state['df'] = None # Invalidate strictly
+    col1, col2 = st.columns(2)
+    with col1:
+        st.subheader("Import Custom Fleet Data")
+        uploaded_file = st.file_uploader("Drop CSV Here", type=["csv"])
+        if uploaded_file is not None:
+            try:
+                st.session_state['df'] = pd.read_csv(uploaded_file)
+                st.session_state['processed_df'] = None # Clear old runs
+                st.success("✅ File payload acquired successfully!")
+            except Exception as e:
+                st.error(f"Error accessing schema: {e}")
                 
-        except Exception as e:
-            st.error(f"Error reading file: {e}")
-            
-    elif st.session_state['df'] is not None:
-        st.info("Currently loaded dataset preview:")
-        st.dataframe(st.session_state['df'].head(10), use_container_width=True)
-
-# 2. 🧪 Generate Sample Data
-elif menu == "🧪 Generate Sample Data":
-    st.title("🧪 Generate Sample Data")
-    st.markdown("Instantly generate a highly realistic logistics dataset (500 rows) perfectly formatted for execution.")
-    
-    if st.button("Generate 500-Row Dataset", type="primary"):
-        with st.spinner("Generating floating-point geo-data..."):
-            df = generate_sample_data(num_rows=500)
-            st.session_state['df'] = df
-            
-            # Auto-reset processing states
+    with col2:
+        st.subheader("Or Generate Synthetic Batch")
+        st.markdown("Creates 500 rows with normalized float vectors and categorical urgencies.")
+        if st.button("Generate Demo Batch", type="primary", use_container_width=True):
+            st.session_state['df'] = generate_sample_data(num_rows=500)
             st.session_state['processed_df'] = None
-            st.session_state['agent_workloads'] = None
-            
-        st.success("✅ Dataset successfully built and loaded into memory!")
-        st.dataframe(df.head(10), use_container_width=True)
-        
-    if st.session_state['df'] is not None:
-        csv_buffer = io.StringIO()
-        st.session_state['df'].to_csv(csv_buffer, index=False)
-        st.download_button("⬇️ Download Sample Data to Local", data=csv_buffer.getvalue(), file_name="generated_sample.csv", mime="text/csv")
+            st.success("🤖 Synthetic data array injected into memory.")
 
-# 3. ⚙️ Run Optimization
-elif menu == "⚙️ Run Optimization":
-    st.title("⚙️ Run Optimization Algorithm")
-    st.markdown("Apply the constraint-based greedy load-balancing algorithm to your loaded dataset.")
-    
+# --- DATA PREVIEW ---
+elif menu == "👀 Data Preview":
+    st.title("👀 Operational Data Preview")
     if st.session_state['df'] is None:
-        st.warning("⚠️ Please upload or generate data first.")
+        st.warning("⚠️ No data batch loaded in RAM.")
     else:
-        st.session_state['use_weighted'] = st.toggle("Use Weighted Algorithm (Priority-Based)", value=st.session_state['use_weighted'])
+        st.markdown("Raw Dataset View:")
         
-        button_text = "Process Deliveries (Weighted)" if st.session_state['use_weighted'] else "Process Deliveries (Standard Dist)"
+        # Advanced Filtering & Sorting Pre-computation
+        search_query = st.text_input("🔍 Search Location ID:", "")
+        priority_filter = st.multiselect("Filter by Target Urgency:", options=['High', 'Medium', 'Low'], default=['High', 'Medium', 'Low'])
         
-        if st.button(button_text, type="primary"):
-            with st.spinner("Executing Greedy Router Algorithm..."):
-                proc_df, workloads, sort_t, assign_t = assign_deliveries(st.session_state['df'], use_weighted=st.session_state['use_weighted'])
-                
-                st.session_state['processed_df'] = proc_df
-                st.session_state['agent_workloads'] = workloads
-                st.session_state['exec_stats'] = {'sort': sort_t, 'assign': assign_t}
-                
-            st.success(f"✅ Pipeline Processed in {sort_t + assign_t:.4f} aggregated seconds!")
-            
-        if st.session_state['processed_df'] is not None:
-            st.subheader("📦 Assigned Deliveries Plan")
-            st.dataframe(st.session_state['processed_df'][['Location_ID', 'Product_Name', 'Distance_km', 'Priority', 'Assigned_Agent']].head(100), use_container_width=True)
-            
-            st.subheader("🏃‍♂️ Real-Time Agent Target Workloads")
-            cols = st.columns(3)
-            metric_label = "Load (Points)" if st.session_state['use_weighted'] else "Total Distance (km)"
-            for idx, (agent, load) in enumerate(st.session_state['agent_workloads'].items()):
-                cols[idx].metric(label=f"{agent} {metric_label}", value=f"{load}")
+        preview_df = st.session_state['df'].copy()
+        if search_query:
+            preview_df = preview_df[preview_df['Location_ID'].astype(str).str.contains(search_query, case=False)]
+        
+        preview_df = preview_df[preview_df['Priority'].isin(priority_filter)]
+        
+        st.dataframe(preview_df, use_container_width=True, height=600)
+        st.metric("Total Match Found:", len(preview_df))
 
-# 4. 📊 Analytics Dashboard
-elif menu == "📊 Analytics Dashboard":
-    st.title("📊 Analytics Dashboard")
-    if st.session_state['processed_df'] is None:
-        st.warning("⚠️ Optimization sequence must be executed first.")
+# --- DATA VALIDATION ---
+elif menu == "🛡️ Data Validation":
+    st.title("🛡️ Pre-Flight Diagnostic Checks")
+    st.markdown("Ensuring vector payload integrity before pushing to algorithm constraint matrices.")
+    if st.session_state['df'] is None:
+         st.warning("⚠️ Data block empty.")
     else:
-        metric_name = "Workload Points" if st.session_state['use_weighted'] else "Total Distance (km)"
+        with st.spinner("Processing deep structural scan..."):
+            time.sleep(0.5) # Slight delay for UI effect
+            is_valid, report, robust_df = validate_data(st.session_state['df'].copy())
+            st.session_state['validation_report'] = report
+        
+        if is_valid:
+            st.success("✅ **OVERALL STATUS: GREEN.** Data satisfies all execution constraints.")
+            st.balloons()
+            for msg in report["warnings"]:
+                st.info(msg)
+        else:
+            st.error("❌ **OVERALL STATUS: RED.** Structural violations detected!")
+            for error in report["errors"]:
+                st.error(f"- {error}")
+            st.warning("Resolution required before `Run Optimization` is enabled.")
+
+# --- RUN OPTIMIZATION ---
+elif menu == "⚙️ Run Optimization":
+    st.title("⚙️ Algorithmic Load Balancer")
+    if st.session_state['df'] is None:
+        st.warning("⚠️ Data module empty.")
+    else:
+        # Prevent if invalid
+        valid_status = False
+        if st.session_state['validation_report']:
+            valid_status = st.session_state['validation_report']['status'] == "Pass"
+        else:
+            valid_status, r, _ = validate_data(st.session_state['df'].copy())
+            st.session_state['validation_report'] = r
+            
+        if not valid_status:
+            st.error("🛑 Hard Stop: Current dataset failed integrity checks. Go to Data Validation.")
+        else:
+            st.subheader("Configuration Matrix")
+            col_a, col_b = st.columns(2)
+            with col_a:
+                num_agents = st.slider("Select Available Agents:", min_value=1, max_value=15, value=3)
+            with col_b:
+                 use_weighted = st.toggle("Apply Priority-Weighted Engine", value=False, help="Forces heavy loads towards Agent equilibrium.")
+            
+            if st.button("🚀 INITIATE GREEDY ASSIGNMENT SEQUENCE"):
+                progress_bar = st.progress(0)
+                status_text = st.empty()
+                
+                status_text.text("Building priority weights & sorting trees...")
+                progress_bar.progress(30)
+                time.sleep(0.5)
+                
+                status_text.text(f"Dispatching greedy sub-routines across {num_agents} worker nodes...")
+                proc_df, loads, sort_t, assign_t, history = assign_deliveries(st.session_state['df'], num_agents=num_agents, use_weighted=use_weighted)
+                st.session_state['processed_df'] = proc_df
+                st.session_state['agent_workloads'] = loads
+                st.session_state['cumulative_history'] = history
+                st.session_state['summary_stats'] = generate_summary(proc_df, loads)
+                progress_bar.progress(80)
+                time.sleep(0.3)
+                
+                status_text.text("Finalizing memory caches...")
+                progress_bar.progress(100)
+                time.sleep(0.2)
+                
+                st.success(f"✅ Protocol complete in {sort_t + assign_t:.5f}s. Move to **View Results**.")
+
+# --- VIEW RESULTS ---
+elif menu == "📑 View Results":
+    st.title("📑 Fleet Execution Output Table")
+    if st.session_state['processed_df'] is None:
+        st.warning("⚠️ Pending assignment algorithms. Execute Optimizer first.")
+    else:
+        st.markdown("Filter and inspect the finalized dispatch roster.")
         
         col1, col2 = st.columns(2)
         with col1:
-            st.markdown(f"**Agent Operational Balance ({metric_name})**")
-            agent_df = pd.DataFrame(list(st.session_state['agent_workloads'].items()), columns=['Agent', 'Load'])
-            st.plotly_chart(px.bar(agent_df, x='Agent', y='Load', color='Agent', text_auto=True), use_container_width=True)
-            
+             agent_filter = st.multiselect("Filter Assigned Agent:", options=list(st.session_state['agent_workloads'].keys()), default=list(st.session_state['agent_workloads'].keys()))
         with col2:
-            st.markdown("**Urgency Target Distribution**")
-            st.plotly_chart(px.pie(st.session_state['processed_df'], names='Priority', color='Priority', color_discrete_map={'High': 'red', 'Medium': 'orange', 'Low': 'green'}), use_container_width=True)
-
-# 5. 🔄 Algorithm Comparison
-elif menu == "🔄 Algorithm Comparison":
-    st.title("🔄 Multi-Algorithmic Comparison")
-    st.markdown("Stress test and benchmark Standard Greedy (Distance) versus Advanced Greedy (Priority-Weighted).")
-    
-    if st.session_state['df'] is None:
-        st.warning("⚠️ Data source isolated. Load external data first.")
-    else:
-        if st.button("▶️ Run Complete Comparative Simulation", type="primary"):
-            with st.spinner("Compiling dual-environment simulations in sandbox..."):
-                df1, loads1, _, _ = assign_deliveries(st.session_state['df'], use_weighted=False)
-                df2, loads2, _, _ = assign_deliveries(st.session_state['df'], use_weighted=True)
-                
-            col1, col2 = st.columns(2)
-            with col1:
-                st.subheader("Standard Focus (Distance Only)")
-                st.write("*Ignores package urgency.*")
-                for a, l in loads1.items():
-                    st.info(f"**{a}:** {l:.2f} km")
-            with col2:
-                st.subheader("Weighted Focus (Priority Based)")
-                st.write("*Penalizes high-urgency bottlenecks.*")
-                for a, l in loads2.items():
-                    st.info(f"**{a}:** {l:.2f} workload points")
-
-# 6. 🔍 Data Insights
-elif menu == "🔍 Data Insights":
-    st.title("🔍 Operational Data Insights & Equity Matrix")
-    if st.session_state['agent_workloads'] is None:
-        st.warning("⚠️ Execute core optimizer first to generate heuristics.")
-    else:
-        stats = get_insights(st.session_state['agent_workloads'], st.session_state['use_weighted'])
+             route_search = st.text_input("🔍 Find Location ID (Post-Assign):")
+             
+        res_df = st.session_state['processed_df'].copy()
         
-        st.subheader("Agent Fairness Diagnostic")
-        st.success(f"✅ **Max Efficiency Achieved:** {stats['lowest_agent']} handling {stats['lowest_load']}")
-        st.error(f"🛑 **Critical Infrastructure Load:** {stats['highest_agent']} operating at {stats['highest_load']}")
-        st.metric("Total Operational Variance Delta", f"{stats['difference']}")
+        # Mandatory formatting columns: Location ID | Product Name | Distance (km) | Priority | Assigned Agent 
+        display_cols = ['Location_ID', 'Product_Name', 'Distance_km', 'Priority', 'Assigned_Agent']
         
-        if stats['is_balanced']:
-            st.success("Verdict: ✅ **Highly Balanced Route Generation (System Nominal)**")
-        else:
-            st.warning("Verdict: ⚠️ **Severe Imbalance Detected in Logistics Assignment!**")
+        res_df = res_df[res_df['Assigned_Agent'].isin(agent_filter)]
+        if route_search:
+            res_df = res_df[res_df['Location_ID'].astype(str).str.contains(route_search, case=False)]
+            
+        st.dataframe(res_df[display_cols], use_container_width=True, height=500)
 
-        if st.session_state['exec_stats']:
-            st.markdown("---")
-            st.subheader("Time Complexity Profiler")
-            st.code(f"Sorting Overhead     : {st.session_state['exec_stats']['sort']:.6f} milliseconds\nMemory Assingment    : {st.session_state['exec_stats']['assign']:.6f} milliseconds")
+# --- ANALYTICS DASHBOARD ---
+elif menu == "📊 Analytics Dashboard":
+    st.title("📊 Enterprise Route Analytics")
+    if st.session_state['summary_stats'] is None:
+         st.warning("⚠️ No telemetry available. Execute routing logic first.")
+    else:
+        stats = st.session_state['summary_stats']
+        
+        st.subheader("Global KPI Metrics")
+        m1, m2, m3, m4 = st.columns(4)
+        m1.metric("📦 Active Packages", stats['total_deliveries'])
+        m2.metric("📏 Avg Dist. (km)", f"{stats['avg_distance']:.2f}")
+        m3.metric("⚠️ Peak Max Dst.", f"{stats['max_distance']:.2f} km")
+        m4.metric("📉 Minimum Dst.", f"{stats['min_distance']:.2f} km")
+        
+        st.divider()
+        st.subheader("Agent Load Equilibrium")
+        c1, c2, c3 = st.columns(3)
+        c1.metric("🏆 Min Load Runner", stats['lowest_agent'])
+        c2.metric("🥵 Max Stress Runner", stats['highest_agent'])
+        c3.metric("⚖️ Variance (Delta)", f"{stats['workload_diff']} bounds")
 
-# 7. 📁 Download Results
-elif menu == "📁 Download Results":
-    st.title("📁 Export Verified Delivery Plan")
+        st.divider()
+        st.subheader("Comprehensive Visualizations")
+        
+        chart_col1, chart_col2 = st.columns(2)
+        
+        with chart_col1:
+            st.markdown('**1. Delivery Priority Density (Pie)**')
+            # Use discrete color map to enforce Red, Orange, Green
+            fig_pie = px.pie(st.session_state['processed_df'], names='Priority', color='Priority',
+                             color_discrete_map=PRIORITY_COLORS, hole=0.3)
+            st.plotly_chart(fig_pie, use_container_width=True)
+            
+        with chart_col2:
+            st.markdown('**2. Workload Distributed Sums (Bar)**')
+            agent_df = pd.DataFrame(list(st.session_state['agent_workloads'].items()), columns=['Agent', 'Total Load Limit'])
+            fig_bar = px.bar(agent_df, x='Agent', y='Total Load Limit', color='Agent', text_auto=True)
+            fig_bar.update_layout(showlegend=False)
+            st.plotly_chart(fig_bar, use_container_width=True)
+            
+        st.markdown('**3. Distance Vector Frequency (Histogram)**')
+        fig_hist = px.histogram(st.session_state['processed_df'], x='Distance', nbins=20, 
+                                color_discrete_sequence=['#0077b6'], title="Distribution of Raw Distance Vertices")
+        st.plotly_chart(fig_hist, use_container_width=True)
+
+        st.markdown('**4. Algorithmic Matrix Processing Trace (Line)**')
+        if st.session_state['cumulative_history'] is not None:
+             history_df = st.session_state['cumulative_history']
+             # Melt for easy plotly line chart (Delivery Index as X)
+             metric_cols = [c for c in history_df.columns if c != 'Delivery_Index']
+             melted_hist = history_df.melt(id_vars='Delivery_Index', value_vars=metric_cols, var_name='Agent', value_name='Cumulative Load')
+             fig_line = px.line(melted_hist, x='Delivery_Index', y='Cumulative Load', color='Agent', title="Load Curve Velocity Through Greedy Loop")
+             st.plotly_chart(fig_line, use_container_width=True)
+
+# --- DOWNLOAD OUTPUT ---
+elif menu == "⬇️ Download Output":
+    st.title("⬇️ Document & Report Export")
     if st.session_state['processed_df'] is None:
-        st.warning("⚠️ Process memory empty. Run optimizations first.")
+        st.warning("⚠️ No finalized payload array built yet.")
     else:
-        st.markdown("✅ Final assignments securely written to deployment buffer.")
+        st.success("✅ Output verified securely in Memory Buffer.")
+        
+        # Provide clean structured payload
+        display_cols = ['Location_ID', 'Product_Name', 'Distance_km', 'Priority', 'Assigned_Agent']
+        clean_df = st.session_state['processed_df'][display_cols]
+        
         csv_buffer = io.StringIO()
-        st.session_state['processed_df'].to_csv(csv_buffer, index=False)
+        clean_df.to_csv(csv_buffer, index=False)
         st.download_button(
-            "⬇️ Fetch Output Plan File (CSV)",
+            label="Download Final CSV",
             data=csv_buffer.getvalue(),
-            file_name="verified_delivery_plan.csv",
+            file_name="Optimum_Dispatch_Plan.csv",
             mime="text/csv",
             type="primary"
         )
-
-# 8. ℹ️ About / Documentation
-elif menu == "ℹ️ About / Documentation":
-    st.title("ℹ️ Theoretical Documentation")
-    st.markdown("""
-    ### System Architecture Overview
-    This multi-module Streamlit dashboard solves complex N-tier logistics problems using constraint-based greedy traversal mechanics.
-    
-    ### Optimization Matrix Methodologies
-    - **Algorithmic Engine:** Each instantiated delivery is dynamically routed to the courier framework possessing the currently minimized cumulative metric block.
-    - **Variable Workload Definitions:** 
-        - Default Euclidean: `Load = Pure Vector Distance`
-        - Aggregated Contextual Weighted: `Load = Euclidean Distance × Priority Matrix Value`
         
-    ### Structural Assumptions & Theoretical Limitations
-    - **Operational Assumptions:** Courier velocities are normalized constants. Vector pathways translate one-to-one regarding temporal expenditure.
-    - **Boundary Limitations:** Static distance constraints. Fails to contextualize dense geographic clusters or Traveling Salesperson routing optimization maps natively, functioning instead strictly on volume/demand equalization.
-    """)
+        st.divider()
+        st.subheader("Summary Report Snapshot")
+        st.markdown(f"""
+        - **Total Shipments Logged:** {len(clean_df)}
+        - **System Assigned Fleet Members:** {len(st.session_state['agent_workloads'])}
+        - **Priority Breakdown:** High ({st.session_state['summary_stats']['num_high']}), Medium ({st.session_state['summary_stats']['num_medium']}), Low ({st.session_state['summary_stats']['num_low']})
+        """)
+        
+        for ag, ld in st.session_state['agent_workloads'].items():
+            st.write(f"- **{ag} Assigned Quota:** {ld:.2f}")
