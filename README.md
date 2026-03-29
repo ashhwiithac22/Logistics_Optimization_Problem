@@ -146,7 +146,12 @@ streamlit run app.py
   * `generate_summary()`
 
 ---
+## 🚀 Live Demo
 
+👉 Try the application here:  
+https://logistics-optimization.streamlit.app/
+
+---
 ## 🚀 Conclusion
 
 This project demonstrates how a greedy algorithm, when combined with a well-designed UI and proper validation, can evolve into a powerful logistics decision-support dashboard.
